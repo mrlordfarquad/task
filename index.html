@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Магазин одежды</title>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11/lib/typed.min.js"></script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    #clothes-shop {
+      text-align: center;
+      width: 60%;
+    }
+
+    #typed-text {
+      font-size: 1.5rem;
+      font-family: monospace;
+      font-weight: 800;
+      margin-top: 20px;
+    }
+
+    #image-container {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+    }
+
+    #clothes-image {
+      width: 250px;
+      height: 250px;
+    }
+  </style>
+</head>
+<body>
+  <div id="clothes-shop">
+    <h1>Добро пожаловать в наш магазин одежды!</h1>
+    <p>Здесь вы найдете все, что нужно для вашего стильного образа.</p>
+    <p>Мы предлагаем широкий выбор модной одежды для всех возрастов и вкусов.</p>
+    <div id="typed-text"></div>
+    <div id="image-container">
+      <img id="clothes-image" src="https://static.wixstatic.com/media/7340c36a8b7347fba2796bc98e9f6e82.jpg/v1/fill/w_602,h_610,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Clothing%20Store.jpg" alt="Clothes Image">
+    </div>
+  </div>
+  <script>
+    var typed = new Typed('#typed-text', {
+      strings: ["У нас всегда есть самые свежие коллекции для вашего гардероба. Подпишитесь на наши обновления!"],
+      typeSpeed: 40,
+      backSpeed: 10,
+      loop: true
+    });
+  </script>
+</body>
+</html>
